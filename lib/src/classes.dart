@@ -31,8 +31,8 @@ class LatLong {
 
 class PickedData {
   final LatLong latLong;
-  final String address;
-  final Map<String, dynamic> addressData;
+  final String? address;
+  final Map<String, dynamic>? addressData;
 
   PickedData(this.latLong, this.address, this.addressData);
 }

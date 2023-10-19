@@ -422,7 +422,7 @@ class _FlutterLocationPickerState extends State<FlutterLocationPicker>
     var response = await client.post(Uri.parse(url));
     var decodedResponse =
         jsonDecode(utf8.decode(response.bodyBytes)) as Map<dynamic, dynamic>;
-    String displayName = decodedResponse['display_name'];
+    String? displayName = decodedResponse['display_name'];
     return PickedData(center, displayName, decodedResponse['address']);
   }
 
